@@ -614,7 +614,7 @@ a.totop-link {
     background: url(images/hacker3.jpg)  no-repeat 100% 0  #474645;
 
     background-size: cover;
-
+ min-height: 100vh;
 
 }
 .about .inner {
