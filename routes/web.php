@@ -4,7 +4,9 @@ use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmailController;
 
+
 Route::post('/send-message', [EmailController::class, 'send'])->name('contact.send');
+
 
 
 

@@ -1,10 +1,16 @@
-@extends('components.layouts.app')
+@extends('frontend.master')
 @section('title', 'Home')
 @section('content')
 <aside class="menu" id="menu">
     <div class="logo">
+
+      <!-- css -->
+      
       <!-- Logo image-->
-      <img src="images/LOGO1.jpeg" width="140" height="140" alt=""/>
+    <div class="logo">
+    <img src="{{ asset('assets/images/LOGO1.jpeg') }}" alt="Chelsea Logo">
+    <span>Chelsea Nicole Mukhanyi</span>
+</div>
       <!-- Logo name-->
       <span>Chelsea Nicole Mukhanyi</span></div>
     <!-- Mobile Navigation-->
@@ -18,6 +24,8 @@
 <a href="{{route('contact')}}"><span id="link_contact">Contact</span></a><br>
 
   <a href="https://www.linkedin.com/in/chelsea-nicole-354420240" target="_blank"><i class="fa fa-linkedin"></i></a>
+   <a href="https://github.com/Chelly2003" target="_blank"><i class="fa fa-github"></i></a>
+
 <br>
   </aside>
   <!-- Go to top link for mobile device -->
@@ -30,11 +38,11 @@
         <div class="inner">
           <h2><span>HEllo, I'm</span><br>
             Chelsea Nicole Mukhanyi</h2>
-          <span class="title">Social Media Manager / Software Developer</span> </div>
+          <span class="title">IT Support / Junior Software Developer</span> </div>
         <div id="owl-demo" class="owl-carousel">
-          <div class="item"><img src="images/hacker2.jpg" alt="" style="height: 990px"/></div>
-          <div class="item"><img src="images/software.jpg" alt="" style="height: 990px" /></div>
-          <div class="item"><img src="images/computer.jpg" alt="" /></div>
+          <div class="item"><img src="{{ asset('assets/images/hacker2.jpg') }}"  alt="" style="height: 990px"/></div>
+          <div class="item"><img src="{{ asset('assets/images/chelsea.jpeg') }}" style="height: 1250px" /></div>
+          <div class="item"><img src="{{ asset('assets/images/computer.jpg') }}"alt="" /></div>
         </div>
       </article>
 
@@ -47,123 +55,189 @@
           <div class="about-con">
             <ul>
               <li>Name: Chelsea Nicole Mukhanyi</li>
-              <li>Email: <a href="mailto:chelseamukhanyi@gmail.com">chelseamukhanyi@gmail</a></li>
+              <li>Email: <a href="mailto:chelseamukhanyi@gmail.com">chelseamukhanyi@gmail.com</a></li>
               <li>Address: PO Box 00100 Ongata Rongai, Magadi Road, KENYA.</li>
               <li>Nationality: Kenyan</li>
             </ul>
             <h3>Professional Profile</h3>
                         <p>I am a Business Information Technology student at the Cooperative University of Kenya with a diploma (credit) in the same field. I have experience in front-end development (HTML, CSS, JavaScript), backend development with PHP and Laravel, and hold Cisco certifications in Introduction to Cybersecurity and Ethical Hacking. I’ve worked as a social media manager for Shiftech Africa, driving brand engagement, and completed a 4-month internship at NHIF Head Office where I gained hands-on IT support experience. I’m seeking opportunities to apply my skills in tech, cybersecurity, and digital strategy to help organizations grow.<br>
             </p>
-             <a href="{{ asset('resume.pdf') }}" download class="button">Download Resume</a>
+             <a href="{{ asset('assets/resume.pdf') }}" download class="button">Download Resume</a>
 <br>
-            <img src="images/signature.png" class="signature" alt=""/> </div>
+           <img src="{{ asset('assets/images/signature.png') }}" class="signature" alt=""> </div>
         </div>
       </article>
 
-      <!-- Skills -->
-      <article class="content skills gray-bg" id="chapterskills">
-        <div class="inner">
-          <h2>Skills</h2>
-          <div class="title-divider"></div>
-          <h3>Just My Awesome Skills</h3>
-          <p>I have strong technical skills in front-end development using HTML, CSS,
-            and JavaScript, as well as back-end development with PHP and Laravel.
-            I'm proficient in MySQL for database management and have foundational
-            knowledge in cybersecurity, having completed Cisco’s Introduction to Cybersecurity
-             and Ethical Hacking courses, along with basic experience using Kali Linux.
-             I also have hands-on IT support skills, including printer troubleshooting
-             and general hardware/software maintenance gained during my internship at NHIF.
-              In addition, I’m experienced in social media management, content creation, and
-               brand engagement through my role at Shiftech Africa. I work well in team environments,
-                communicate effectively, and bring strong problem-solving, time management, and
-                 creative thinking to every project I take on.</p>
-          <div class="skills-con">
+   <!-- Skills -->
+<article class="content skills gray-bg" id="chapterskills">
+    <div class="inner">
+        <h2>Skills</h2>
+        <div class="title-divider"></div>
+
+        <h3>Technical Skills & Expertise</h3>
+
+        <p>
+            I am passionate about building secure, efficient, and user-friendly technology solutions.
+            My expertise spans software engineering, IT support, networking, and cybersecurity.
+            I have hands-on experience developing responsive web applications using HTML, CSS,
+            JavaScript, PHP, Laravel, and MySQL, as well as providing technical support for
+            hardware, software, operating systems, and network-related issues. Through Cisco
+            Networking Academy certifications, I have strengthened my knowledge of networking,
+            ethical hacking, cybersecurity fundamentals, and Security Operations Center (SOC)
+            concepts. I continuously expand my skills by working on real-world projects and
+            staying up to date with emerging technologies and industry best practices.
+        </p>
+
+        <div class="skills-con">
+
             <div class="container-sub margin-top50">
-              <div class="row">
-                <div class="col-6 margin-bottom50">
-                  <div class="col-6"><span class="chart" data-percent="75"><span class="percent"></span> </span></div>
-                  <div class="col-6 chart-text">
-                    <h4>Cybersecurity Fundamentals </h4>
-                    <p>Expert, 1 year</p>
-                  </div>
-                </div>
-                <div class="col-6 margin-bottom50">
-                  <div class="col-6"><span class="chart" data-percent="88"><span class="percent"></span> </span></div>
-                  <div class="col-6 chart-text">
-                    <h4>PHP & Laravel Development</h4>
-                    <p>Advanced, 2 years</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="col-6"><span class="chart" data-percent="90"><span class="percent"></span> </span></div>
-                  <div class="col-6 chart-text">
-                    <h4>Technical Expertise</h4>
-                    <p>Expert, 2 years</p>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="col-6"><span class="chart" data-percent="96"><span class="percent"></span> </span></div>
-                  <div class="col-6 chart-text">
-                    <h4>Social Media Management</h4>
-                    <p>Expert, 1 year</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="full-divider"></div>
-            <div class="container-sub skill-list">
-              <div class="row">
-                <h3>Knowledge</h3>
-                <p>I possess a strong foundation in front-end and back-end web development, with practical knowledge of HTML, CSS, JavaScript, PHP, and Laravel. I have a solid grasp of database management using MySQL and essential cybersecurity principles, supported by Cisco certifications in Introduction to Cybersecurity and Ethical Hacking. My knowledge extends to using Kali Linux for basic penetration testing and system analysis. I also understand digital branding, content strategy, and audience engagement, which I apply in my work as a social media manager. Additionally, I have practical IT support knowledge, including troubleshooting hardware, software, and printer issues gained during my internship at NHIF.</p>
-                <div class="col-4 margin-top10">
-                  <ul>
-                    <li>Google Analythics & SEO</li>
-                    <li>Install and Configure</li>
-                    <li>E-commerce Platform</li>
-                    <li>Web Usability</li>
-                  </ul>
-                </div>
+                <div class="row">
 
-                <div class="col-4 margin-top10">
-                  <ul>
-                    <li>Video Editing</li>
-                  </ul>
+                    <div class="col-6 margin-bottom50">
+                        <div class="col-6">
+                            <span class="chart" data-percent="85">
+                                <span class="percent"></span>
+                            </span>
+                        </div>
+
+                        <div class="col-6 chart-text">
+                            <h4>Web Development</h4>
+                            <p>Advanced</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 margin-bottom50">
+                        <div class="col-6">
+                            <span class="chart" data-percent="80">
+                                <span class="percent"></span>
+                            </span>
+                        </div>
+
+                        <div class="col-6 chart-text">
+                            <h4>PHP & Laravel</h4>
+                            <p>Advanced</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="col-6">
+                            <span class="chart" data-percent="45">
+                                <span class="percent"></span>
+                            </span>
+                        </div>
+
+                        <div class="col-6 chart-text">
+                            <h4>Cybersecurity</h4>
+                            <p>Beginner</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="col-6">
+                            <span class="chart" data-percent="85">
+                                <span class="percent"></span>
+                            </span>
+                        </div>
+
+                        <div class="col-6 chart-text">
+                            <h4>IT Support</h4>
+                            <p>Advanced</p>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
             </div>
+
             <div class="full-divider"></div>
-            <div class="container-sub">
-              <div class="row">
-                <h3>Language Skills</h3>
-                <p>I am fluent in English and Kiswahili, both written and spoken,
-                                    allowing me to communicate effectively in diverse professional
-                                     settings. I also have basic Spanish and German skills and am currently
-                                     working to improve my proficiency for broader communication in international
-                                      or multicultural environments. My language strengths support clear documentation,
-                                      professional correspondence, content creation, and effective teamwork.</p>
-                <div class="progressbar-main margin-top50">
-                  <div class="progress-bar-description">English Experienced</div>
-                  <div id="progressBar" class="progress">
-                    <div class="progress-value"></div>
-                  </div>
+
+            <div class="container-sub skill-list">
+                <div class="row">
+
+                    <h3>Technical Knowledge</h3>
+
+                    <p>
+                        I have practical knowledge in software engineering, IT support,
+                        networking, and cybersecurity. My experience includes developing
+                        web applications using Laravel and PHP, managing MySQL databases,
+                        troubleshooting hardware and software, configuring Windows and Linux
+                        systems, using Git for version control, and applying cybersecurity
+                        principles to protect systems and data. I am committed to continuous
+                        learning and keeping up with modern technologies and industry best practices.
+                    </p>
+
+                    <div class="col-4 margin-top10">
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>PHP & Laravel</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4 margin-top10">
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>Linux (Kali)</li>
+                            <li>Networking</li>
+                            <li>Cybersecurity</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4 margin-top10">
+                        <ul>
+                            <li>Windows Administration</li>
+                            <li>Hardware Troubleshooting</li>
+                            <li>Microsoft Office</li>
+                            <li>Technical Support</li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div class="progressbar-main margin-top40">
-                  <div class="progress-bar-description">Spanish Basic</div>
-                  <div id="progressBar2" class="progress">
-                    <div class="progress-value"></div>
-                  </div>
-                </div>
-                <div class="progressbar-main margin-top40">
-                  <div class="progress-bar-description">German Basic</div>
-                  <div id="progressBar3" class="progress">
-                    <div class="progress-value"></div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+
+            <div class="full-divider"></div>
+
+            <div class="container-sub">
+                <div class="row">
+
+                    <h3>Language Skills</h3>
+
+                    <p>
+                        I am fluent in English and Kiswahili, both written and spoken,
+                        enabling effective communication in professional and multicultural
+                        environments.My communication
+                        abilities support technical documentation, customer support,
+                        teamwork, and collaboration.
+                    </p>
+
+                    <div class="progressbar-main margin-top50">
+                        <div class="progress-bar-description">
+                            English - Fluent
+                        </div>
+
+                        <div id="progressBar" class="progress">
+                            <div class="progress-value"></div>
+                        </div>
+                    </div>
+
+                    <div class="progressbar-main margin-top40">
+                        <div class="progress-bar-description">
+                            Kiswahili - Fluent
+                        </div>
+
+                        <div id="progressBar2" class="progress">
+                            <div class="progress-value"></div>
+                        </div>
+                    </div>
+
+                   
+
+                </div>
+            </div>
+
         </div>
-      </article>
+    </div>
+</article>
 
       <!-- Experience -->
       <article class="content experience white-bg" id="chapterexperience">
@@ -183,7 +257,7 @@
                     <div class="flot-left">
                       <h5>Shiftech Africa</h5>
                       <h4>SOftware Engineer</h4>
-                      <span>Currently Working</span> </div>
+                      <span>2025-2026</span> </div>
                   </div>
                   <div class="col-6 margin-bottom50 margin-top50 no-margin-top"> As a software engineer, I have hands-on experience in both front-end and back-end development. I’ve worked with languages such as HTML, CSS, JavaScript, PHP, and SQL, and have built responsive websites and functional web applications using Laravel. My experience includes designing user interfaces, managing databases, and integrating systems to meet business requirements. I’m also familiar with version control (Git), troubleshooting, and deploying solutions that align with both user needs and technical goals. </div>
                 </div>
@@ -194,7 +268,7 @@
                     <div class="flot-left">
                       <h5>Shiftech Africa</h5>
                       <h4>Social Media Manager</h4>
-                      <span>Currently Working</span> </div>
+                      <span>2025-2026</span> </div>
                   </div>
                   <div class="col-6 margin-bottom50 margin-top50 no-margin-top"> As a Social Media Manager, I create and manage digital content to build brand awareness and engage target audiences. I plan and schedule posts, analyze performance metrics, and develop strategies to improve online presence. I also handle audience interactions, run ad campaigns when needed, and
                     ensure that all content aligns with the brand’s voice and goals. </div>
@@ -214,7 +288,7 @@
           <h2>Education</h2>
           <div class="title-divider"></div>
           <h3>Just My Education</h3>
-          <p>I am currently pursuing a Bachelor's degree in Business Information Technology at the Cooperative University of Kenya, expected to graduate in 2026. I hold a Diploma in the same field from the same institution, where I graduated with credit. My education has provided me with a strong foundation in programming, database management, business systems, and IT support, as well as practical exposure through academic projects and internship experience.
+          <p>Completed a Bachelor's degree course in Business Information Technology at the Cooperative University of Kenya, awaiting graduation that is to be held in Dec 2026. I hold a Diploma in the same field from the same institution, where I graduated with credit. My education has provided me with a strong foundation in programming, database management, business systems, and IT support, as well as practical exposure through academic projects and internship experience.
 
 </p>
           <div class="education-con">
@@ -227,7 +301,7 @@
                     <div class="flot-left">
                       <h5>Co-operative University of Kenya</h5>
                       <h4>Bachelor in Business Information Technology</h4>
-                      <span>2023- 2026(anticipated)</span> </div>
+                      <span>2023- 2026(anticipated graduation)</span> </div>
                   </div>
                   <div class="col-6 margin-bottom50 margin-top50 no-margin-top"> Combines IT and business studies, equipping students with skills to design, develop, and manage information systems that support business operations. It covers programming, database management, cybersecurity, networking, e-commerce, business management, and IT project planning—preparing graduates to bridge the gap between technology and business strategy in modern organizations. </div>
                 </div>
@@ -236,14 +310,43 @@
                   <div class="col-6 margin-bottom50 margin-top50">
                     <div class="col-3 icon-block"><i class="fa fa-laptop"></i></div>
                     <div class="flot-left">
-                      <h5>Boston State University</h5>
+                      <h5>Cisco Networking Academy</h5>
                       <h4>Introduction to Cybersecurity</h4>
-                      <span>2006 - 2007</span> </div>
+                      <span>Feb - March 2025</span> </div>
                   </div>
                   <div class="col-6 margin-bottom50 margin-top50 no-margin-top"> Completed Cisco’s Introduction to Cybersecurity course, gaining a solid understanding of cybersecurity principles, online threats, data protection, and best practices for securing networks and systems. The course introduced key concepts such as cybercrime, cybersecurity laws, and the importance of ethical behavior in protecting digital information.
 
 </div>
                 </div>
+
+                 <div class="full-divider"></div>
+                <div class="education-details">
+                  <div class="col-6 margin-bottom50 margin-top50">
+                    <div class="col-3 icon-block"><i class="fa fa-laptop"></i></div>
+                    <div class="flot-left">
+                      <h5>Cisco Networking Academy</h5>
+                      <h4>Networking Basics</h4>
+                      <span>Feb - March 2026</span> </div>
+                  </div>
+                  <div class="col-6 margin-bottom50 margin-top50 no-margin-top">   Completed Cisco's Networking Basics course, gaining practical knowledge of computer networking concepts including IP addressing, network devices, switching, routing, wireless networking, network troubleshooting, and the OSI and TCP/IP models. The course provided a strong foundation for designing, configuring, and maintaining modern computer networks.
+
+</div>
+                </div>
+
+   <div class="full-divider"></div>
+                <div class="education-details">
+                  <div class="col-6 margin-bottom50 margin-top50">
+                    <div class="col-3 icon-block"><i class="fa fa-laptop"></i></div>
+                    <div class="flot-left">
+                      <h5>Cisco Networking Academy</h5>
+                      <h4>Cybersecurity Defense Analyst Career Path</h4>
+                      <span>Feb - March 2026</span> </div>
+                  </div>
+                  <div class="col-6 margin-bottom50 margin-top50 no-margin-top"> Completed Cisco's Cybersecurity Defense Analyst Career Path, developing skills in Security Operations Center (SOC) workflows, threat detection, incident response, log analysis, network monitoring, endpoint security, and Security Information and Event Management (SIEM) using Splunk. Prepared to identify, investigate, and respond to cybersecurity threats in enterprise environments.
+
+</div>
+                </div>
+
                 <div class="full-divider"></div>
                 <div class="education-details">
                   <div class="col-6 margin-bottom50 margin-top50">
@@ -251,7 +354,7 @@
                     <div class="flot-left">
                       <h5>Cisco Networking Academy</h5>
                       <h4>Ethical Hacking Certificate</h4>
-                      <span>Feb 2025 - March 2025</span> </div>
+                      <span>March 2025 - April 2025</span> </div>
                   </div>
                   <div class="col-6 margin-bottom50 margin-top50 no-margin-top">Completed the Cisco Ethical Hacker course, gaining foundational knowledge in penetration testing, vulnerability scanning, and ethical hacking techniques used to identify and prevent cyber threats.
 
@@ -298,9 +401,10 @@
                     </div>
                   </div>
                   <div class="col-6 m-margin-top30">
-                    <h3>I'm also on Social Networks</h3>
-                   I am active on several social platforms where I share insights on technology, cybersecurity, and digital creativity. These networks allow me to connect with like-minded professionals, stay updated on industry trends, and showcase my work. Engaging on social media has also helped me grow my skills in branding, communication, and content strategy.
-                    <div class="contact-social margin-top30"><a href="https://www.linkedin.com/in/chelsea-nicole-354420240" target="_blank"><i class="fa fa-linkedin"></i></a> </div>
+                   
+                    <div class="contact-social margin-top30">
+                      <a href="https://www.linkedin.com/in/chelsea-nicole-354420240" target="_blank"><i class="fa fa-linkedin"></i></a> 
+                      <a href="https://github.com/Chelly2003" target="_blank"><i class="fa fa-github"></i></a></div>
                   </div>
                 </div>
               </div>
@@ -309,13 +413,13 @@
             <div class="container-sub">
               <div class="row">
                 <div class="contact-form">
-<h3>Drop Me A Line</h3>
+<h3>SEND ME A MESSAGE</h3>
                      @if(session('success'))
   <div class="alert alert-success">
     {{ session('success') }}
   </div>
 @endif
-                  <form id="form1" name="form1" method="POST" >
+               <form id="form1" name="form1" method="POST" action="{{ route('contact.send') }}">
                     @csrf
 
                     <input name="name" type="text" id="name" placeholder="Your Name..." required/>

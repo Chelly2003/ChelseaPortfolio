@@ -1,4 +1,4 @@
-@extends('components.layouts.app')
+@extends('frontend.master')
 @section('title', 'Home')
 @section('content')
 <aside class="menu" id="menu">
@@ -19,6 +19,7 @@
           <a href="{{route('contact')}}"><span id="link_contact">Contact</span></a>
 <br>
     <a href="https://www.linkedin.com/in/chelsea-nicole-354420240" target="_blank"><i class="fa fa-linkedin"></i></a>
+     <a href="https://github.com/Chelly2003" target="_blank"><i class="fa fa-github"></i></a>
 
   </aside>
   <!-- Go to top link for mobile device -->
@@ -160,9 +161,10 @@
                     </div>
                   </div>
                   <div class="col-6 m-margin-top30">
-                    <h3>I'm also on Social Networks</h3>
-                   I am active on several social platforms where I share insights on technology, cybersecurity, and digital creativity. These networks allow me to connect with like-minded professionals, stay updated on industry trends, and showcase my work. Engaging on social media has also helped me grow my skills in branding, communication, and content strategy.
-                    <div class="contact-social margin-top30">><a href="https://www.linkedin.com/in/chelsea-nicole-354420240" target="_blank"><i class="fa fa-linkedin"></i></a> </div>
+               
+                    <div class="contact-social margin-top30">><a href="https://www.linkedin.com/in/chelsea-nicole-354420240" target="_blank"><i class="fa fa-linkedin"></i></a> 
+                     <a href="https://github.com/Chelly2003" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -171,13 +173,13 @@
             <div class="container-sub">
               <div class="row">
                 <div class="contact-form">
-                  <h3>Drop Me a Line</h3>
+                  <h3>SEND ME A MESAAGE</h3>
                    @if(session('success'))
   <div class="alert alert-success">
     {{ session('success') }}
   </div>
 @endif
-                  <form id="form1" name="form1" method="POST" >
+                  <form id="form1" name="form1" method="POST" action="{{ route('contact.send') }}">
                     @csrf
                     <input name="name" type="text" id="name" placeholder="Your Name..." />
                     <input name="email" type="text" id="email" placeholder="Your Email..." />
