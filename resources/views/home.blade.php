@@ -40,9 +40,9 @@
             Chelsea Nicole Mukhanyi</h2>
           <span class="title">IT Support / Junior Software Developer</span> </div>
         <div id="owl-demo" class="owl-carousel">
-          <div class="item"><img src="{{ asset('assets/images/hacker2.jpg') }}"  alt="" style="height: 990px"/></div>
+          <div class="item"><img src="{{ asset('assets/images/hacker2.jpg') }}"  alt="" style="height: 1250px"/></div>
           <div class="item"><img src="{{ asset('assets/images/chelsea.jpeg') }}" style="height: 1250px" /></div>
-          <div class="item"><img src="{{ asset('assets/images/computer.jpg') }}"alt="" /></div>
+          <div class="item"><img src="{{ asset('assets/images/computer.jpg') }}"alt="" style="height: 1250px" /></div>
         </div>
       </article>
 
